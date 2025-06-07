@@ -400,13 +400,49 @@ footer p {
 
 @media (max-width: 768px) {
     nav img {
-        height: 50px;
+        height: 30px;
     }
 
     nav li ul a {
         font-size: 1rem;
+        padding: 5px 10px;
     }
     
+    .hero-section .text {
+        padding: 2rem;
+    }
+
+    .hero-section .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .text h1 span {
+        font-size: 4rem;
+    }
+
+    .hero-section .text p {
+        font-size: 1rem;
+    }
+
+    .service-text {
+        padding: 2rem;
+    }
+
+    .service-text div {
+        padding: 2rem;
+    }
+
+    .service-text div h2 {
+        font-size: 2rem;
+    }
+
+    .service-text div p {
+        font-size: 1rem;
+    }
+
+    .scripture-content h2 {
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -418,3 +454,5 @@ footer p {
         opacity: 1;
     }
 }
+
+
