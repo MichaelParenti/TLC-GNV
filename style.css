@@ -20,7 +20,7 @@ body {
 
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     padding: 0px;
     display: flex;
@@ -35,6 +35,13 @@ nav img {
     height: 60px;
     vertical-align: middle;
     margin: 10px;
+}
+
+nav .gator-logo {
+    height: 120px;
+    position: absolute;
+    bottom: -130px;
+    left: -10px;
 }
 
 nav ul {
@@ -72,6 +79,66 @@ nav li a:hover {
 
 
 
+
+
+
+.gator-banner {
+  background-color: #0021A5; /* Gator blue */
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  position: fixed;
+  top: 80px;
+  z-index: 30;
+  width: 100%;
+}
+
+.gator-rotator {
+  display: flex;
+  white-space: nowrap;
+  animation: slideText 12s infinite linear;
+  width: 100%;
+}
+
+.gator-rotator img {
+  height: 30px;
+}
+
+.gator-rotator span {
+  display: inline-block;
+  padding: 0 30px;
+  color: #FA4616; /* Gator orange */
+  font-size: 1.5rem;
+  font-weight: 700;
+      /* -webkit-text-stroke: 1px white; width and color */
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+@keyframes slideText {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+@media (max-width: 768px) {
+    .gator-banner {
+        /* font-size: 1.2rem; */
+        padding: 5px 10px;
+        top: 50px;
+    }
+
+    .gator-rotator span {
+        /* font-size: 1rem; */
+        padding: 0 15px;
+    }
+
+    @keyframes slideText {
+      from { transform: translateX(-400%); }
+      to { transform: translateX(200%); }
+    }
+}
 
 
 
